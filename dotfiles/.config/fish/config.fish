@@ -2,8 +2,10 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-alias vim "vimx"
+[ (command -v vimx) ] && alias vim "vimx"
 [ "$TERM" = "xterm-kitty" ] && alias kssh "kitten ssh"
+
+set -x EDITOR vim
 
 fish_add_path "$HOME/.local/bin"
 
