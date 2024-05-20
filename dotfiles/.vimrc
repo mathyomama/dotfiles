@@ -187,3 +187,4 @@ noremap / /\v
 set background=dark
 "let hlstate=0
 "nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
+syntax on
