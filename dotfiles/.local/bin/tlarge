@@ -1,0 +1,8 @@
+#!/bin/bash
+
+tmux new-session -d
+tmux split-window -h
+tmux split-window -h
+tmux select-layout even-horizontal
+tmux select-pane -R
+tmux -2 attach-session -d
