@@ -13,3 +13,22 @@ size = 12
 family = "ubuntu mono"
 style = "bold"
 
+[selection]
+save_to_clipboard = true
+
+[keyboard]
+bindings = [
+    { key = "ArrowUp", mods = "Control|Shift", action = "ScrollLineUp" },
+    { key = "ArrowDown", mods = "Control|Shift", action = "ScrollLineDown" },
+    { key = "PageUp", mods = "Control|Shift", action = "ScrollPageUp" },
+    { key = "PageDown", mods = "Control|Shift", action = "ScrollPageDown" },
+]
+
+[[hints.enabled]]
+command         = "xdg-open" # On Linux/BSD
+hyperlinks      = true
+post_processing = true
+persist         = false
+mouse           = { enabled = true, mods = "Control" }
+binding         = { key = "U", mods = "Control|Shift" }
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩‘]+"
