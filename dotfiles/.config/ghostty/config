@@ -1,0 +1,21 @@
+# Fonts
+font-family = Ubuntu Mono
+font-size = 12
+font-thicken = true
+
+# Color
+background-opacity = .95
+theme = GruvboxDark
+bold-is-bright = true
+
+# Random
+cursor-style = block
+shell-integration-features = no-cursor
+# scrollback-limit =
+
+# keybinds
+keybind = ctrl+shift+page_up=scroll_page_up
+keybind = ctrl+shift+page_down=scroll_page_down
+keybind = ctrl+shift+up=scroll_page_lines:-1
+keybind = ctrl+shift+down=scroll_page_lines:1
+
